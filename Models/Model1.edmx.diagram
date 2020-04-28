@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="98dbfd0fe58f4575ae2d73442ddc844d" Name="Diagram1">
+        <EntityTypeShape EntityType="MobileStoreManagementModel.ChiTietDonDH" Width="1.5" PointX="5.25" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.ChiTietHDB" Width="1.5" PointX="8.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.ChiTietHDN" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.ChiTietPhieuNhap" Width="1.5" PointX="5.25" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.ChiTietPhieuXuat" Width="1.5" PointX="8.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.ChiTietSanPham" Width="1.5" PointX="5.25" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.ChucVu" Width="1.5" PointX="1.5" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.DonDatHang" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.HangSX" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.HoaDonBan" Width="1.5" PointX="6" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.HoaDonNhap" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.KhachHang" Width="1.5" PointX="0.75" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.NhaCungCap" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.NhanVien" Width="1.5" PointX="3.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.PhieuNhapKho" Width="1.5" PointX="3" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.PhieuXuatKho" Width="1.5" PointX="6" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.SanPham" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.KHDatHangQuy4" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.NCC_SP_Quy2" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.SP" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.SPBanNhieuNhatThang2Nam2019" Width="1.5" PointX="10.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileStoreManagementModel.tongTienHoaDon" Width="1.5" PointX="10.75" PointY="11.75" IsExpanded="true" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_DonDatHang" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_HoaDonBan" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_SanPhamHDB" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_HoaDonNhap" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_SanPhamHDN" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_PhieuNhapKho" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_SP" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_CTPXK" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_PhieuXuatKho" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_ChiTietSP" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_ChucVu" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_Hangsx" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_KhachHangHD" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_NhanVienHD" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_NhaCC" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_NCC" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileStoreManagementModel.fk_NV" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

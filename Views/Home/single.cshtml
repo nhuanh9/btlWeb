@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "single";
+    Layout = "~/Views/Share/_LayoutPage1.cshtml";
+}
+
+
+<div id="fh5co-title-box" style="background-image: url(images/camila-cordeiro-114636.jpg); background-position: 50% 90.5px;" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="page-title">
+        <img src="images/person_1.jpg" alt="Free HTML5 by FreeHTMl5.co">
+        <span>January 1, 2018</span>
+        <h2>How to write interesting articles</h2>
+    </div>
+</div>
+<div id="fh5co-single-content" class="container-fluid pb-4 pt-4 paddding">
+    <div class="container paddding">
+        <div class="row mx-0">
+            <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
+                <p>
+                    Chân thành cảm ơn mọi người đã ghé thăm HPA shop.
+                </p>
+                <p>
+                    HPA shop hứa hẹn cung cấp những sản phẩm chất lượng nhất tốt nhất đến người dùng.
+                </p>
+                <p>Ở đây chúng tôi bán trải nghiệm, không bán sản phẩm!</p>
+                <p>
+                    HPA luôn mong muốn những trải nghiệm của khách hàng khi sử dụng sản phẩm cũng như khi ghé thăm shop là tốt nhất.
+                    Đội ngũ nhân viên HPA phục vụ tận tình, luôn đặt cảm xúc của khách hàng làm lên trước doanh số.
+                    Nằm giữa lòng Hà Nội náo nhiệt nhưng luôn phục quý khách thật tận tâm và chu đáo, bất kể ngoài kia sóng gió thế nào.
+                </p>
+                <h3>Sản phẩm của HPA</h3>
+                <p>
+                    Chúng tôi cung cấp những sản phẩm:
+                </p>
+                <ul>
+                    <li>Nuột nhất!</li>
+                    <li>Bền nhất!</li>
+                    <li>Nuột nhất!</li>
+                    <li>NGON NHẤT!!!</li>
+                </ul>
+                <p>HPA hỗ trợ ship code toàn quốc với độ an toàn của sản phẩm là tuyệt đối!</p>
+                <p>HPA theo sản phẩm của mình trọn đời như cha mẹ theo con!</p>
+                <p>HPA hỗ trợ trả góp 0% bất chấp!</p>
+            </div>
+            @Html.Action("Tags", "Home")
+        </div>
+    </div>
+</div>
+@Html.Partial("SmallTrending")

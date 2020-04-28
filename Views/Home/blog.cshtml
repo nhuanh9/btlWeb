@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "blog";
+    Layout = "~/Views/Share/_LayoutPage1.cshtml";
+}
+
+<div class="container-fluid pb-4 pt-4 paddding">
+    <div class="container paddding">
+        <div class="row mx-0">
+            @Html.Partial("News")
+            @Html.Action("Tags", "Home")
+        </div>
+        @Html.Partial("Paging")
+    </div>
+</div>
+@Html.Partial("SmallTrending")
+

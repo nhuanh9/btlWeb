@@ -1,0 +1,81 @@
+﻿
+@model BTL.Models.SanPham
+
+@{
+    ViewBag.Title = "Xoa";
+    Layout = "~/Views/Share/_LayoutPage1.cshtml";
+}
+
+<div id="fh5co-single-content" class="container-fluid pb-4 pt-4 paddding">
+    <div class="container paddding">
+        <div class="row mx-0">
+            <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
+                <div><h4>Bạn có chắc muốn xóa? </h4>
+                            <div class="row">
+                                <div class="col-8">
+                                    <img src="@Url.Content("~/images/" + Model.MaSP + ".jpg")" alt="" />  
+                                </div>
+                                <div class="col-4">
+                                    <dl class="dl-horizontal">
+                                        <dt>
+                                            Tên sản phẩm:
+                                        </dt>
+
+                                        <dd>
+                                            @Html.DisplayFor(model => model.TenSP)
+                                        </dd>
+
+                                        <dt>
+                                            Giá bán:
+                                        </dt>
+
+                                        <dd>
+                                            @Html.DisplayFor(model => model.DonGiaBan)
+                                        </dd>
+
+                                        <dt>
+                                            Số lượng còn:
+                                        </dt>
+
+                                        <dd>
+                                            @Html.DisplayFor(model => model.SoLuong)
+                                        </dd>
+
+                                        <dt>
+                                            Kiểu dáng:
+                                        </dt>
+
+                                        <dd>
+                                            @Html.DisplayFor(model => model.ChiTietSanPham.KieuDang)
+                                        </dd>
+
+                                        <dt>
+                                            Hãng sản xuất:
+                                        </dt>
+
+                                        <dd>
+                                            @Html.DisplayFor(model => model.HangSX.TenHSX)
+                                        </dd>
+
+                                    </dl>
+                                </div>
+                            </div>
+                </div>
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-actions no-color text-center mt-3 style="font-size: 20px"">
+                        <input type="submit" value="Xóa" class="btn btn-danger" /> |
+                        @Html.ActionLink("Back to List", "Index")
+                    </div>
+                }
+            </div>
+            @Html.Action("Tags", "Home")
+        </div>
+        
+    </div>
+</div>
+@Html.Partial("SmallTrending")
+
