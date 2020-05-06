@@ -8,6 +8,7 @@
     <div class="container-fluid paddding mb-5">
         <center>
             <h2 class="">Chỉnh sửa sản phẩm </h2>
+            <img src="@Url.Content("~/images/" + Model.MaSP + ".jpg")" alt="" />
         </center>
         <div class="row mx-0 justify-content-md-center">
             <div class="col-md-1 col-0"></div>
@@ -17,8 +18,6 @@
                     @Html.AntiForgeryToken()
 
                     <div class="form-horizontal">
-                        <h4>SanPham</h4>
-                        <hr />
                         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                         @Html.HiddenFor(model => model.MaSP)
 

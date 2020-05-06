@@ -157,5 +157,18 @@ namespace BTL.Controllers
 
             return RedirectToAction("Index");
         }
+
+        public PartialViewResult list(int opt = 1)
+        {
+            if (opt == 1)
+            {
+                return PartialView(db.SanPhams.OrderBy(n => n.TenSP).ToList());
+            }
+            else
+            {
+                return PartialView(db.SanPhams.OrderBy(n => n.DonGiaBan).ToList());
+            }
+           
+        }
     }
 }
