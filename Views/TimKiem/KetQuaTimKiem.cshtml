@@ -1,4 +1,7 @@
-﻿@model IEnumerable<BTL.Models.SanPham>
+﻿@using BTL.Models
+@using PagedList;
+@using PagedList.Mvc;
+@model PagedList.IPagedList<BTL.Models.SanPham>
 @{
     ViewBag.Title = "KetQuaTimKiem";
     Layout = "~/Views/Share/_LayoutPage1.cshtml";
@@ -40,4 +43,11 @@
             @Html.Action("Tags", "Home")
         </div>
     </div>
+</div>
+<div class="container text-center align-items-center">
+    Trang @Model.PageCount<Model.PageNumber? 0 : Model.PageNumber>
+        / @Model.PageCount
+        <div class="menuTrang">
+            @Html.PagedListPager(Model, page => Url.Action("KetQuaTimKiem", new { page = page, form = ViewBag.form }))
+        </div>
 </div>
